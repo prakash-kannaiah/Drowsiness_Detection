@@ -61,3 +61,40 @@ Run the drowsiness detection script:
 
 ```bash
 python drowsiness_detection.py
+
+## Contributing
+
+We welcome contributions to improve this project! Here are some guidelines to get started:
+
+1. **Fork the Repository**: Click on the "Fork" button at the top right of this repository page to create a copy of this repository under your GitHub account.
+
+2. **Clone the Repository**: Use `git clone` to clone the forked repository to your local machine.
+    ```bash
+    git clone https://github.com/your-username/drowsiness-detection.git
+    cd drowsiness-detection
+    ```
+
+3. **Create a New Branch**: Create a new branch for your feature or bugfix.
+    ```bash
+    git checkout -b my-new-feature
+    ```
+
+4. **Make Changes**: Make your changes to the codebase, ensuring you follow the existing code style and add appropriate tests if needed.
+
+5. **Commit Your Changes**: Commit your changes with a meaningful commit message.
+    ```bash
+    git commit -m "Add a meaningful commit message here"
+    ```
+
+6. **Push to Your Fork**: Push your changes to your forked repository.
+    ```bash
+    git push origin my-new-feature
+    ```
+
+7. **Open a Pull Request**: Go to the original repository on GitHub and open a pull request with a clear description of your changes.
+
+Thank you for contributing!
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
