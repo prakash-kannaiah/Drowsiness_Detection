@@ -98,4 +98,9 @@ Thank you for contributing!
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+This project is licensed under a custom license. You are free to use, copy, modify, and distribute the code and associated documentation, provided that you include the original copyright notice and adhere to the following condition:
+
+- **Non-Commercial Use**: This project may not be sold or otherwise used for commercial purposes. Redistribution or use of this project for commercial purposes, including but not limited to selling or licensing, is not permitted.
+
+For more details, please refer to the [LICENSE](LICENSE) file in this repository.
+
