@@ -54,8 +54,6 @@ drowsiness-detection/
 - shape/shape_predictor_68_face_landmarks.dat
 - drowsiness_detection.py
 - requirements.txt
-- README.md
-- LICENSE
 
 ## Usage
 
