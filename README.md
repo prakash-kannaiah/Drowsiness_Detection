@@ -44,9 +44,23 @@ This project implements a drowsiness detection system using Python, OpenCV, and 
 
 5. Extract the `.bz2` file:
 
+    On **Windows**:
+    - **Using 7-Zip**:
+      1. Right-click the `.bz2` file in File Explorer.
+      2. Select `7-Zip` > `Extract to "shape_predictor_68_face_landmarks.dat\"`.
+
+    - **Using WinRAR**:
+      1. Right-click the `.bz2` file in File Explorer.
+      2. Select `Extract Here` or `Extract to "shape_predictor_68_face_landmarks.dat\"`.
+
+    Alternatively, you can use the following command in a command prompt if you have `bzip2` installed:
     ```bash
     bzip2 -d shape/shape_predictor_68_face_landmarks.dat.bz2
     ```
+    **This will extract the file directly into the `shape` folder as `shape_predictor_68_face_landmarks.dat`.**
+
+    If you don’t have `bzip2` installed, you can download it from the [GnuWin32 project](http://gnuwin32.sourceforge.net/packages/bzip2.htm) or use the GUI tools mentioned above.
+
 
 ## Project Structure
 
