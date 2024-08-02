@@ -61,6 +61,7 @@ Run the drowsiness detection script:
 
 ```bash
 python drowsiness_detection.py
+```
 
 ## Contributing
 
