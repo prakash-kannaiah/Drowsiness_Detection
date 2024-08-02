@@ -51,8 +51,7 @@ This project implements a drowsiness detection system using Python, OpenCV, and 
 ## Project Structure
 
 drowsiness-detection/
-- shape/
--- shape_predictor_68_face_landmarks.dat
+- shape/shape_predictor_68_face_landmarks.dat
 - drowsiness_detection.py
 - requirements.txt
 - README.md
