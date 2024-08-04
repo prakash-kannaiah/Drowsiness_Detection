@@ -13,7 +13,7 @@ This project implements a drowsiness detection system using Python, OpenCV, and 
 
 ## Code Explanation
 
-For a detailed explanation of the code, see [Code Explanation](CODE_EXPLANATION.md).
+For a detailed explanation of the code, see [Code Explanation](CODE_EXPLANATION.md)
 
 ## Requirements
 
