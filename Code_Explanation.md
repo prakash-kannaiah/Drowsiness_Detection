@@ -5,10 +5,12 @@ The main script `drowsiness_detection.py` is designed to detect driver drowsines
 **Initialization**
 
 **1. Video Capture Initialization**
+   
    cap = cv2.VideoCapture(0)
    - The script initializes video capture from the webcam.
 
 **2. Loading Dlib Models**
+   
    face_detector = dlib.get_frontal_face_detector()
    dlib_facelandmark = dlib.shape_predictor("shape/shape_predictor_68_face_landmarks.dat")
    - Loads the pre-trained Dlib face detector and facial landmark predictor.
@@ -16,6 +18,7 @@ The main script `drowsiness_detection.py` is designed to detect driver drowsines
 **Functions**
 
 **3. Eye Aspect Ratio Calculation**
+   
    def detect_eye_aspect_ratio(eye_points):
        poi_A = distance.euclidean(eye_points[1], eye_points[5])
        poi_B = distance.euclidean(eye_points[2], eye_points[4])
@@ -27,6 +30,7 @@ The main script `drowsiness_detection.py` is designed to detect driver drowsines
 **Constants**
 
 **4. Thresholds**
+   
    EAR_THRESHOLD = 0.250
    TIME_THRESHOLD = 3
    - Sets the EAR threshold and the time threshold for detecting drowsiness.
@@ -34,6 +38,7 @@ The main script `drowsiness_detection.py` is designed to detect driver drowsines
 **Main Loop**
 
 **5. Frame Capture and Processing**
+   
    while True:
        ret, frame = cap.read()
        if not ret:
@@ -43,6 +48,7 @@ The main script `drowsiness_detection.py` is designed to detect driver drowsines
    - Captures frames from the webcam and converts them to grayscale for face detection.
 
 **6. Face and Landmark Detection**
+   
    for face in faces:
        x, y, w, h = face.left(), face.top(), face.width(), face.height()
        cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 0, 255), 2)
@@ -51,6 +57,7 @@ The main script `drowsiness_detection.py` is designed to detect driver drowsines
    - Detects facial landmarks within the detected faces.
 
 **7. Eye Landmark Extraction and EAR Calculation**
+   
    left_eye_points = [(face_landmarks.part(n).x, face_landmarks.part(n).y) for n in range(36, 42)]
    right_eye_points = [(face_landmarks.part(n).x, face_landmarks.part(n).y) for n in range(42, 48)]
    left_eye_ratio = detect_eye_aspect_ratio(left_eye_points)
@@ -59,6 +66,7 @@ The main script `drowsiness_detection.py` is designed to detect driver drowsines
    - Extracts eye landmarks and calculates the EAR for both eyes.
 
 **8. Drowsiness Detection**
+   
    if average_eye_ratio < EAR_THRESHOLD:
        if start_time is None:
            start_time = time.time()
@@ -77,12 +85,14 @@ The main script `drowsiness_detection.py` is designed to detect driver drowsines
 **Display and Termination**
 
 **9. Display and Break Condition**
+   
    cv2.imshow("Drowsiness Detection", frame)
    if cv2.waitKey(10) & 0xFF == ord('q'):
        break
    - Displays the processed frame and allows the user to break the loop by pressing the 'q' key.
 
 **10. Resource Release**
+    
     cap.release()
     cv2.destroyAllWindows()
     - Releases the webcam and closes all OpenCV windows when the loop ends.
