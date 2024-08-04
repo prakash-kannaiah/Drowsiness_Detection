@@ -1,6 +1,6 @@
 # Drowsiness Detection
 
-![Project Thumbnail](Images/Thumbnail.png)
+![Project Thumbnail](Images/Tumbnail.png)
 
 This project implements a drowsiness detection system using Python, OpenCV, and Dlib. The system detects the drowsiness of a driver by monitoring their eye aspect ratio (EAR) and displays a warning message on the screen when drowsiness is detected.
 
