@@ -11,6 +11,10 @@ This project implements a drowsiness detection system using Python, OpenCV, and 
 - Calculates the eye aspect ratio to detect drowsiness.
 - Displays warning messages on the screen when drowsiness is detected.
 
+## Code Explanation
+
+For a detailed explanation of the code, see [Code Explanation](CODE_EXPLANATION.md).
+
 ## Requirements
 
 - Python 3.x
